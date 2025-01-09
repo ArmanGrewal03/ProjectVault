@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E40845C-7E33-7BD5-D811-5574AD74C459" name="Medical_Records">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>FDC7CD87-D048-84B3-CE83-C3C240EA4F4C</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Medical_File_ID" id="33F56C0F-9B2D-A2D0-4122-CF79C940E7CD">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>4A8B9BFF-0063-0726-E373-74F530825707</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_ID" id="728A4820-888F-3770-F35D-93B05B514303">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>7A0D6E8F-6375-EFCD-24CB-DDC997973D4A</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21C01713-643F-346A-FC9C-2B67FF9CC810" referredColumn="D7E89712-697F-DD25-A749-4295776F3724"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77F951F6-FF74-A317-38BA-B673FC8E89AD" name="Medical_Records_PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>D4F1FD3F-E882-E0E9-9929-C860FEA05ADE</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33F56C0F-9B2D-A2D0-4122-CF79C940E7CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D46EC75-E9B2-CBEE-696E-242DE85BB060" name="Medical_Records__IDX">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A5541DD6-1F17-21E1-64CD-7DACC4A88E66</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="728A4820-888F-3770-F35D-93B05B514303"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C03980C1-9BFD-5DEF-D981-B17D6505AC31" name="Medical_Records_Patients_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>A5541DD6-1F17-21E1-64CD-7DACC4A88E66</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="728A4820-888F-3770-F35D-93B05B514303"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

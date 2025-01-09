@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Confirms Cost" directorySegmentName="seg_0" id="01411757-C30A-0F37-3351-703C54CB2DA4">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:40:10 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<sourcePk>721A54DF-4A41-25C5-FDB3-BD45935BCABD</sourcePk>
+<targetPk>F0D16199-493D-8079-8031-31D9DF9437B6</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>10E00A94-E951-AB75-0770-BBEC411F9689</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D4FCF8CA-04A7-0B2D-6590-E198D1DAE7AE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

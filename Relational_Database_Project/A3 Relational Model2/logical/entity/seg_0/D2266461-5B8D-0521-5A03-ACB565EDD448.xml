@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2266461-5B8D-0521-5A03-ACB565EDD448" name="Patients">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:12:35 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Patient ID" id="043454AB-8F86-A298-1382-9810F7F70143">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:53:53 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Health Card ID" id="52773904-E44F-381A-DEB1-E7D60170A721">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:54:46 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email Address" id="71ED2E69-3173-F53E-669E-5E3D4953F277">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:55:41 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Insurance ID" id="9B632C78-0560-342D-C38E-C0C64B349296">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:57:27 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date of Birth" id="0B198338-5BE1-EFC4-86E2-37AFAC45F739">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:57:43 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="55954E39-8F65-055A-37EA-380ED6ADFADA">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:14:57 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone number" id="0EF94201-9A52-35CE-D081-E0B3793596AA">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:15:25 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Invoice ID" id="CD087AF3-D5E1-927A-3AED-B707D5B36C06">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:48:23 UTC</createdTime>
+<generatorID>D35063BA-54F4-332E-6619-B4B0687B3B4A</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3BDDDBDB-D119-8C56-2745-4F6A4E9D14D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Appointment ID" id="712756FD-751F-3C84-F4D4-1F4DF78D98A8">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:54:00 UTC</createdTime>
+<generatorID>62FE45AE-FD2D-BE23-3B45-27564B209747</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8C2DF02F-CD1F-E2ED-552A-CAC47C8B3ED6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F72B48BE-C459-1D11-214A-828762EFFAA4" name="Patients PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:26:07 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>043454AB-8F86-A298-1382-9810F7F70143</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

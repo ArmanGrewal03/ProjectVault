@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="02E47C04-47CF-02DE-BEB5-3AA284525CC7" name="Appointments">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:12:57 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Appointment ID" id="8C2DF02F-CD1F-E2ED-552A-CAC47C8B3ED6">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:19:05 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description" id="57FC3366-19D3-9DA2-FF03-B8CCF54DD930">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:19:34 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dentist ID" id="00F85759-A327-4FEB-53CD-14E72A9DC1A2">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:19:56 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Patient ID" id="E54B5B90-6A9A-EE3E-5BCB-E4C83CFE80B8">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:20:13 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date &amp; Time" id="A73E559B-9591-23A8-DE47-72176D8A0C9B">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:20:44 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1FD0AD01-A548-E51E-8B23-F258509EB569" name="Appointments PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:19:14 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8C2DF02F-CD1F-E2ED-552A-CAC47C8B3ED6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

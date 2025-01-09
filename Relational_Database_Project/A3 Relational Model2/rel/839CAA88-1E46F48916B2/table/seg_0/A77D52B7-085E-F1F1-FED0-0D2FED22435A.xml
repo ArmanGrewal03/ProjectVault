@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A77D52B7-085E-F1F1-FED0-0D2FED22435A" name="Inventory">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>BBCC3FA1-25F3-EB0F-E063-A914B3D2FA1C</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Inventory_ID" id="061870B1-A207-21E5-15ED-C35B24B060D0">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>0F81AD6F-3011-2305-A2DF-397667652147</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name_of_item" id="CBE1F62E-B174-A073-078E-5C253B82B8A8">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>8AB95029-B517-1EA1-8FC3-B98276A88628</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Quantity" id="C4AEE622-695A-7EA3-B7CA-1B94B0BD6D7A">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>3BB26331-A364-F132-207D-0E774AD9F448</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Item_category_or_type" id="6F96CAE3-B113-6445-E1C0-E9DF6843696E">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>13797AE1-643A-B5B3-76AB-6CDE331CCBE3</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FF5B04B-472C-5EC7-5901-E00BD4FE375C" name="Inventory_PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>21E438F1-A841-394A-376A-405546F6D342</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="061870B1-A207-21E5-15ED-C35B24B060D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

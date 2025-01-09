@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92B36CAE-B789-CDF8-12B5-2B2FEF1C970E" name="Invoices">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>10E00A94-E951-AB75-0770-BBEC411F9689</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Invoice_ID" id="C5893989-7D2F-4E06-475E-E8D55E8FBB1F">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>3BDDDBDB-D119-8C56-2745-4F6A4E9D14D8</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_ID" id="107F7534-AD4C-5A94-0BCC-B4F01175373F">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>E805CD91-89C6-7B95-606D-FD613678394B</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10B5C256-AF92-9A6E-F20E-A04647212D9B" referredColumn="D7E89712-697F-DD25-A749-4295776F3724"/>
+</associations>
+</Column>
+<Column name="Treatment_ID" id="F667ED96-9681-8D50-7484-89B3DC8A8A6B">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>D782AEEE-75F1-9F9D-DA2F-0D462C74DDB6</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="019E7BF1-7A63-8A5F-6AF1-3A2DE33F4E7C" referredColumn="3F80FCD6-12B7-5F3C-69F7-D27EDD5F3D46"/>
+</associations>
+</Column>
+<Column name="Payment_Status" id="AE569BF2-86EE-99A1-5BC5-6937A3184F7D">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>E1368336-EB55-0291-CD62-FD7E0621C7DB</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>Pending</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Payment_Type" id="35B52725-EA83-1DF1-F456-BF2E74EAED0B">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>90DD99E1-B7DB-8954-4453-8A7377C384A8</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cost" id="547314A6-526C-D752-A926-6611A206C223">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>934C889D-955C-C5A1-BD5C-D100E7014B4E</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F257024-9684-BF84-AB0E-965E49FD508B" name="Invoices_PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>721A54DF-4A41-25C5-FDB3-BD45935BCABD</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5893989-7D2F-4E06-475E-E8D55E8FBB1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E218550-C281-D86D-64B2-57E98C3E0EAB" name="Invoices_Treatments_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>01411757-C30A-0F37-3351-703C54CB2DA4</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F667ED96-9681-8D50-7484-89B3DC8A8A6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD31A8CF-61ED-246A-99F9-C5A60B86A87B" name="Invoices_Patients_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:13:25 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="107F7534-AD4C-5A94-0BCC-B4F01175373F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

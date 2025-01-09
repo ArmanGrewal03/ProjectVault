@@ -1,0 +1,22 @@
+#!/bin/sh
+#export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
+sqlplus64 "j255sing/10249933@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
+
+WITH RecentAppointments AS (
+    SELECT a.appointment_id, a.description, a.datetime, 'Patient' AS UserType, p.name AS UserName
+    FROM appointments a
+    JOIN patients p ON a.patient_id = p.patient_id
+    WHERE a.datetime = (SELECT MAX(datetime) FROM appointments WHERE patient_id = a.patient_id)
+    UNION
+    SELECT a.appointment_id, a.description, a.datetime, 'Dentist' AS UserType, d.name AS UserName
+    FROM appointments a
+    JOIN dentists d ON a.dentist_id = d.dentist_id
+    WHERE a.datetime = (SELECT MAX(datetime) FROM appointments WHERE dentist_id = a.dentist_id)
+)
+SELECT appointment_id, description, datetime, UserType, UserName
+FROM RecentAppointments
+ORDER BY datetime DESC;
+
+
+exit;
+EOF

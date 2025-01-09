@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Is billed to" directorySegmentName="seg_0" id="D35063BA-54F4-332E-6619-B4B0687B3B4A">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:48:13 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<sourcePk>F72B48BE-C459-1D11-214A-828762EFFAA4</sourcePk>
+<targetPk>721A54DF-4A41-25C5-FDB3-BD45935BCABD</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D2266461-5B8D-0521-5A03-ACB565EDD448</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>10E00A94-E951-AB75-0770-BBEC411F9689</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

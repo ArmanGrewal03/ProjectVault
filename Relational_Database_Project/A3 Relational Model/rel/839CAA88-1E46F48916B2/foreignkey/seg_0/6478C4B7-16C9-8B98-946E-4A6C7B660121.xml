@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6478C4B7-16C9-8B98-946E-4A6C7B660121" containerWithKeyObject="8E72CD85-165E-1745-FFA2-961563D1D8FA" localFKIndex="13B03B93-06A3-2189-CF29-B90C0D17DD4C" name="Appointments_Dentists_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:34:57 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<referredTableLongName>Dentists</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>111F659A-3EE4-E02B-B410-936A017F4BAA</referredTableID>
+<keyObject>F9995C8E-659B-73C8-83E6-7540338E6FA7</keyObject>
+<referredKeyID>F9995C8E-659B-73C8-83E6-7540338E6FA7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Dentist_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

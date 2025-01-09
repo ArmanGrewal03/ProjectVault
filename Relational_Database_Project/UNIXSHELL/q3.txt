@@ -1,0 +1,17 @@
+#!/bin/sh
+#export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
+sqlplus64 "j255sing/10249933@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
+
+SELECT
+    TO_CHAR(a.datetime, 'DY') AS day_of_week,
+    COUNT(*) AS number_of_appointments,
+    d.name AS dentist_name
+FROM appointments a
+JOIN patients p ON a.patient_id = p.patient_id
+JOIN dentists d ON a.dentist_id = d.dentist_id
+GROUP BY TO_CHAR(a.datetime, 'DY'), d.name
+ORDER BY TO_CHAR(a.datetime, 'DY');
+
+
+exit;
+EOF

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7913C564-98A8-A644-4FC6-A967BD42AD02" name="Treatments">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>D4FCF8CA-04A7-0B2D-6590-E198D1DAE7AE</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Treatment_ID" id="3F80FCD6-12B7-5F3C-69F7-D27EDD5F3D46">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>0D160781-D48F-BF19-CCC7-C1420928076D</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cost" id="4581A833-7459-B721-A1BC-72D6788DB0EC">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>D82EB196-4C33-C647-141F-E9CA7CFB014C</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="7CFC01E6-9C25-5B0E-FCDD-58A3FF2A1F61">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>E828F140-2189-14D4-44FB-30EC5BAB97C4</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name_of_Treatment" id="6E8C4BD2-B89D-2DCE-D929-BF991B7FB026">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>F83A2802-FA0C-7981-9815-4161C31065B0</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Inventory_Inventory_ID" id="28C77C46-C1CE-99D6-822C-98AECC1C1D47">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>0676686A-89A3-357F-9969-C2A59C2AE318</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F3C216D-C90B-A9E2-A4C7-11A32BEF91FB" referredColumn="061870B1-A207-21E5-15ED-C35B24B060D0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71723408-6D28-9788-0379-721574A707A5" name="Treatments_PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>F0D16199-493D-8079-8031-31D9DF9437B6</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F80FCD6-12B7-5F3C-69F7-D27EDD5F3D46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCE5160C-3817-BACA-8A7D-3D502E4DAB9C" name="Treatments_Inventory_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>F10111B7-2283-6453-F639-F335A79FF8E2</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28C77C46-C1CE-99D6-822C-98AECC1C1D47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

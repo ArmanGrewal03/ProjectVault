@@ -1,0 +1,15 @@
+#!/bin/sh
+#export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
+sqlplus64 "j255sing/10249933@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
+
+SELECT p.name AS PatientName, SUM(t.cost) AS TotalTreatmentCost
+FROM patients p
+INNER JOIN invoices i ON p.patient_id = i.patient_id
+INNER JOIN treatments t ON i.treatment_id = t.treatment_id
+GROUP BY p.name
+HAVING SUM(t.cost) > 500; 
+
+
+
+exit;
+EOF

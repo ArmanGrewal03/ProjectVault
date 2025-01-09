@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D4FCF8CA-04A7-0B2D-6590-E198D1DAE7AE" name="Treatments">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:11:12 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Treatment ID" id="0D160781-D48F-BF19-CCC7-C1420928076D">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:34:40 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cost" id="D82EB196-4C33-C647-141F-E9CA7CFB014C">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:35:32 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description" id="E828F140-2189-14D4-44FB-30EC5BAB97C4">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:35:58 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name of Treatment" id="F83A2802-FA0C-7981-9815-4161C31065B0">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:36:33 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Inventory ID" id="0676686A-89A3-357F-9969-C2A59C2AE318">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:55:37 UTC</createdTime>
+<generatorID>F10111B7-2283-6453-F639-F335A79FF8E2</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<referedAttribute>0F81AD6F-3011-2305-A2DF-397667652147</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0D16199-493D-8079-8031-31D9DF9437B6" name="Treatments PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:26:27 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D160781-D48F-BF19-CCC7-C1420928076D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

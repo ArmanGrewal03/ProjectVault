@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Scheduled for" directorySegmentName="seg_0" id="62FE45AE-FD2D-BE23-3B45-27564B209747">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:53:45 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<sourcePk>F72B48BE-C459-1D11-214A-828762EFFAA4</sourcePk>
+<targetPk>1FD0AD01-A548-E51E-8B23-F258509EB569</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D2266461-5B8D-0521-5A03-ACB565EDD448</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>02E47C04-47CF-02DE-BEB5-3AA284525CC7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

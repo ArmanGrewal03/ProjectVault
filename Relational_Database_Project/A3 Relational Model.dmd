@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="A3 Relational Model" id="2AB764C9-E94D-E2A4-6C4B-BD144B748403" version="3.5">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:09:20 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2AB764C9-E94D-E2A4-6C4B-BD144B748403</designId>
+</OSDM_Design>

@@ -1,0 +1,68 @@
+#!/bin/sh
+#export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
+sqlplus64 "j255sing/10249933@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
+
+--------------------------------------------------------
+--  DDL for View APPOINTMENT_INFO
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "J255SING"."APPOINTMENT_INFO" ("APPOINTMENT_ID", "APPOINTMENT_DESCRIPTION", "APPOINTMENT_DATETIME", "PATIENT_NAME", "DENTIST_NAME", "MEDICAL_FILE_ID") AS 
+  SELECT
+    a.appointment_id,
+    a.description AS appointment_description,
+    a.datetime AS appointment_datetime,
+    p.name AS patient_name,
+    d.name AS dentist_name,
+    m.medical_file_id
+FROM appointments a
+JOIN patients p ON a.patient_id = p.patient_id
+JOIN dentists d ON a.dentist_id = d.dentist_id
+LEFT JOIN medical_records m ON p.patient_id = m.patient_id
+;
+--------------------------------------------------------
+--  DDL for View INVENTORY_TREATMENT_INFO
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "J255SING"."INVENTORY_TREATMENT_INFO" ("INVENTORY_ID", "NAME_OF_ITEM", "NAME_OF_TREATMENT", "TREATMENT_COST") AS 
+  SELECT
+    i.inventory_id,
+    i.name_of_item,
+    t.name_of_treatment,
+    t.cost AS treatment_cost
+FROM inventory i
+LEFT JOIN treatments t ON i.inventory_id = t.inventory_inventory_id
+;
+--------------------------------------------------------
+--  DDL for View INVOICE_SUMMARY
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "J255SING"."INVOICE_SUMMARY" ("INVOICE_ID", "PATIENT_NAME", "NAME_OF_TREATMENT", "PAYMENT_STATUS", "PAYMENT_TYPE", "COST") AS 
+  SELECT
+    i.invoice_id,
+    p.name AS patient_name,
+    t.name_of_treatment,
+    i.payment_status,
+    i.payment_type,
+    i.cost
+FROM invoices i
+JOIN patients p ON i.patient_id = p.patient_id
+JOIN treatments t ON i.treatment_id = t.treatment_id
+;
+--------------------------------------------------------
+--  DDL for View MEDICAL_RECORD_SUMMARY
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "J255SING"."MEDICAL_RECORD_SUMMARY" ("MEDICAL_FILE_ID", "PATIENT_NAME", "DATE_OF_BIRTH", "PATIENT_EMAIL", "PATIENT_PHONE") AS 
+  SELECT
+    m.medical_file_id,
+    p.name AS patient_name,
+    p.date_of_birth,
+    p.email_address AS patient_email,
+    p.phone_number AS patient_phone
+FROM medical_records m
+JOIN patients p ON m.patient_id = p.patient_id
+;
+
+
+exit;
+EOF

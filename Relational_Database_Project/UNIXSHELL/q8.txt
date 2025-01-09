@@ -1,0 +1,13 @@
+#!/bin/sh
+#export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
+sqlplus64 "j255sing/10249933@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
+
+SELECT d.name AS DentistName, COUNT(a.appointment_id) AS AppointmentCount
+FROM dentists d
+LEFT JOIN appointments a ON d.dentist_id = a.dentist_id
+GROUP BY d.name
+ORDER BY AppointmentCount DESC;
+
+
+exit;
+EOF

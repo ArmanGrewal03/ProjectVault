@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="10E00A94-E951-AB75-0770-BBEC411F9689" name="Invoices">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:10:56 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Invoice ID" id="3BDDDBDB-D119-8C56-2745-4F6A4E9D14D8">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:24:25 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Patient ID" id="E805CD91-89C6-7B95-606D-FD613678394B">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:14:13 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Treatment ID" id="D782AEEE-75F1-9F9D-DA2F-0D462C74DDB6">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:14:24 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Payment Status" id="E1368336-EB55-0291-CD62-FD7E0621C7DB">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:14:53 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Payment Type" id="90DD99E1-B7DB-8954-4453-8A7377C384A8">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:15:04 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cost" id="934C889D-955C-C5A1-BD5C-D100E7014B4E">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 21:31:35 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Treatment ID1" id="34B04A35-4C04-931F-F408-AE20397C309D">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:41:04 UTC</createdTime>
+<generatorID>01411757-C30A-0F37-3351-703C54CB2DA4</generatorID>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="false"/>
+</engineerTo>
+<referedAttribute>0D160781-D48F-BF19-CCC7-C1420928076D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="721A54DF-4A41-25C5-FDB3-BD45935BCABD" name="Invoices PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 22:27:13 UTC</createdTime>
+<ownerDesignName>A3 Relational Model2</ownerDesignName>
+<engineerTo>
+<item key="839CAA88-2EA0-B1D1-29A3-1E46F48916B2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3BDDDBDB-D119-8C56-2745-4F6A4E9D14D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

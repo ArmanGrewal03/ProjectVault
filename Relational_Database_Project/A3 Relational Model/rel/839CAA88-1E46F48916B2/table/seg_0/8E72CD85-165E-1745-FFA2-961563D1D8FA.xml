@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E72CD85-165E-1745-FFA2-961563D1D8FA" name="Appointments">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>02E47C04-47CF-02DE-BEB5-3AA284525CC7</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Appointment_ID" id="D57BAC37-68BF-E5F2-5E5A-56106914874F">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>8C2DF02F-CD1F-E2ED-552A-CAC47C8B3ED6</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="2722CC05-5E74-6984-89A3-7278A6B700E4">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>57FC3366-19D3-9DA2-FF03-B8CCF54DD930</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dentist_ID" id="53013AF9-27BB-E544-759D-563D25E0F59D">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>00F85759-A327-4FEB-53CD-14E72A9DC1A2</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6478C4B7-16C9-8B98-946E-4A6C7B660121" referredColumn="DB58B65D-461F-AC17-D43F-DC73811B3DC1"/>
+</associations>
+</Column>
+<Column name="Patient_ID" id="22A56348-4123-F69E-D874-988D73E97D9A">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>E54B5B90-6A9A-EE3E-5BCB-E4C83CFE80B8</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CEEDCB3-CF46-5D7E-CA13-00B0ED968EB8" referredColumn="D7E89712-697F-DD25-A749-4295776F3724"/>
+</associations>
+</Column>
+<Column name="Date_&amp;_Time" id="DFB1908B-193F-BD3D-17DD-20E967066187">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>A73E559B-9591-23A8-DE47-72176D8A0C9B</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A2036A0-45D6-E93B-2402-B14559D5CCD4" name="Appointments_PK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:00:35 UTC</createdTime>
+<generatorID>1FD0AD01-A548-E51E-8B23-F258509EB569</generatorID>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D57BAC37-68BF-E5F2-5E5A-56106914874F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DEE0106-46B0-E126-AD79-AE1F1B203835" name="Appointments_Patients_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:31:54 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22A56348-4123-F69E-D874-988D73E97D9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13B03B93-06A3-2189-CF29-B90C0D17DD4C" name="Appointments_Dentists_FK">
+<createdBy>Jassi</createdBy>
+<createdTime>2023-09-24 23:34:57 UTC</createdTime>
+<ownerDesignName>A3 Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53013AF9-27BB-E544-759D-563D25E0F59D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

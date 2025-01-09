@@ -1,0 +1,123 @@
+#!/bin/sh
+
+QueriesMenu()
+{
+    while [ "$CHOICE" != "START" ]
+    do
+        clear
+        echo " ==============================================================================================================="
+        echo " $QUERY_TABLES 1) Invoice and Treatment Details: Patient data, Treatment Costs, and Payment Status"
+        echo " "
+        echo " $QUERY_TABLES 2) Patient Unpaid Invoices Summary: Tracking Pending Payments by Patient and Insurance ID"
+        echo " "
+        echo " $QUERY_TABLEs 3) Dentist Appointments by Day of Week: Counting Weekly Appointments and Dentist Assignments"
+        echo " ==============================================================================================================="
+        echo " ==============================================================================================================="
+        echo " $QUERY_TABLEs 4) Find Patients Who Received Expensive Treatments"
+        echo " "
+        echo " $QUERY_TABLEs 5) Find Patients Who Haven't Received Treatments"
+        echo " "
+        echo " $QUERY_TABLEs 6) Find Patients Who Have Received Treatments"
+        echo " "
+        echo " $QUERY_TABLEs 7) Combine Most Recent Appointments for Patients and Dentists"
+        echo " "
+        echo " $QUERY_TABLEs 8) Count Appointments for Each Dentist"
+        echo " "
+        echo " $BACK B) Back "
+        echo " "
+        echo " $END E) End/Exit"
+        echo "Choose: "
+        read CHOICE
+        if [ "$CHOICE" == "0" ]
+        then
+            echo "Nothing Here"
+        elif [ "$CHOICE" == "1" ]
+        then
+            # Call your script for querying tables
+            bash q1.sh
+            exit
+            
+            
+            
+        elif [ "$CHOICE" == "2" ]
+        then
+            # Call your script for querying tables
+            bash q2.sh
+            exit  
+            
+                      
+            
+        elif [ "$CHOICE" == "3" ]
+        then
+            # Call your script for querying tables
+            bash q3.sh
+            exit  
+            
+            
+            
+            
+            
+            
+        elif [ "$CHOICE" == "4" ]
+        then
+            # Call your script for querying tables
+            bash q4.sh
+            exit 
+            
+        elif [ "$CHOICE" == "5" ]
+        then
+            # Call your script for querying tables
+            bash q5.sh
+            exit 
+            
+        elif [ "$CHOICE" == "6" ]
+        then
+            # Call your script for querying tables
+            bash q6.sh
+            exit 
+            
+            
+            
+        elif [ "$CHOICE" == "7" ]
+        then
+            # Call your script for querying tables
+            bash q7.sh
+            exit 
+              
+
+        elif [ "$CHOICE" == "8" ]
+        then
+            # Call your script for querying tables
+            bash q8.sh
+            exit 
+            
+            
+            
+            
+        elif [ "$CHOICE" == "B" ]
+        then
+            # Call your script for querying tables
+            bash menu.sh
+            pause             
+            
+                     
+            
+        
+        elif [ "$CHOICE" == "E" ]
+        then
+            exit
+        fi
+    done
+}
+
+# Main Program
+ProgramStart()
+{
+    StartMessage
+    while [ 1 ]
+    do
+        QueriesMenu
+    done
+}
+
+ProgramStart
