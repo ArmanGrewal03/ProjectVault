@@ -1,0 +1,5 @@
+FROM tomcat:8.5-jdk11-openjdk
+
+COPY ManageStoreManagers-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ManageStoreManagers.war
+
+EXPOSE 8080

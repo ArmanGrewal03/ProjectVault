@@ -1,0 +1,529 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lmsdb-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lmsdb
+spec:
+  selector:
+    app: lmsdb
+  ports:
+    - port: 3306
+      targetPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lmsdb
+spec:
+  selector:
+    matchLabels:
+      app: lmsdb
+  template:
+    metadata:
+      labels:
+        app: lmsdb
+    spec:
+      containers:
+        - name: lmsdb
+          image: armang1/coe692:lmsdb
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: storage
+              mountPath: /data/lmsdb
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: lmsdb-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lmsaddsalesdb-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lmsaddsalesdb
+spec:
+  selector:
+    app: lmsaddsalesdb
+  ports:
+    - port: 3306
+      targetPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lmsaddsalesdb
+spec:
+  selector:
+    matchLabels:
+      app: lmsaddsalesdb
+  template:
+    metadata:
+      labels:
+        app: lmsaddsalesdb
+    spec:
+      containers:
+        - name: lmsaddsalesdb
+          image: armang1/coe692:lmsaddsalesdb
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: storage
+              mountPath: /data/lmsaddsalesdb
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: lmsaddsalesdb-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lmsinventorydb-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lmsinventorydb
+spec:
+  selector:
+    app: lmsinventorydb
+  ports:
+    - port: 3306
+      targetPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lmsinventorydb
+spec:
+  selector:
+    matchLabels:
+      app: lmsinventorydb
+  template:
+    metadata:
+      labels:
+        app: lmsinventorydb
+    spec:
+      containers:
+        - name: lmsinventorydb
+          image: armang1/coe692:lmsinventorydb
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: storage
+              mountPath: /data/lmsinventorydb
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: lmsinventorydb-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lmsmanagerdb-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lmsmanagerdb
+spec:
+  selector:
+    app: lmsmanagerdb
+  ports:
+    - port: 3306
+      targetPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lmsmanagerdb
+spec:
+  selector:
+    matchLabels:
+      app: lmsmanagerdb
+  template:
+    metadata:
+      labels:
+        app: lmsmanagerdb
+    spec:
+      containers:
+        - name: lmsmanagerdb
+          image: armang1/coe692:lmsmanagerdb
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: storage
+              mountPath: /data/lmsmanagerdb
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: lmsmanagerdb-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lmssalesdb-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lmssalesdb
+spec:
+  selector:
+    app: lmssalesdb
+  ports:
+    - port: 3306
+      targetPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lmssalesdb
+spec:
+  selector:
+    matchLabels:
+      app: lmssalesdb
+  template:
+    metadata:
+      labels:
+        app: lmssalesdb
+    spec:
+      containers:
+        - name: lmssalesdb
+          image: armang1/coe692:lmssalesdb
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: storage
+              mountPath: /data/lmssalesdb
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: lmssalesdb-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lmsstoredb-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lmsstoredb
+spec:
+  selector:
+    app: lmsstoredb
+  ports:
+    - port: 3306
+      targetPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lmsstoredb
+spec:
+  selector:
+    matchLabels:
+      app: lmsstoredb
+  template:
+    metadata:
+      labels:
+        app: lmsstoredb
+    spec:
+      containers:
+        - name: lmsstoredb
+          image: armang1/coe692:lmsstoredb
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: storage
+              mountPath: /data/lmsstoredb
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: lmsstoredb-pvc
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: getsales
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: getsales
+  template:
+    metadata:
+      labels:
+        app: getsales
+    spec:
+      containers:
+        - name: getsales
+          image: armang1/coe692:getsales
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              value: lmssalesdb:3306
+            - name: kubeMQAddress
+              value: 10.81.248.53:50000
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: getsales
+spec:
+  selector:
+    app: getsales
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: managestoremanagers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: managestoremanagers
+  template:
+    metadata:
+      labels:
+        app: managestoremanagers
+    spec:
+      containers:
+        - name: getsales
+          image: armang1/coe692:managestoremanagers
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              value: lmsmanagerdb:3306
+            - name: kubeMQAddress
+              value: 10.81.248.53:50000
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: managestoremanagers
+spec:
+  selector:
+    app: managestoremanagers
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: searchinventory
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: searchinventory
+  template:
+    metadata:
+      labels:
+        app: searchinventory
+    spec:
+      containers:
+        - name: searchinventory
+          image: armang1/coe692:searchinventory
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              value: lmsinventorydb:3306
+            - name: kubeMQAddress
+              value: 10.81.248.53:50000
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: searchinventory
+spec:
+  selector:
+    app: searchinventory
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: updateweeklysales
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: updateweeklysales
+  template:
+    metadata:
+      labels:
+        app: updateweeklysales
+    spec:
+      containers:
+        - name: updateweeklysales
+          image: armang1/coe692:updateweeklysales
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              value: lmsaddsalesdb:3306
+            - name: kubeMQAddress
+              value: 10.81.248.53:50000
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: updateweeklysales
+spec:
+  selector:
+    app: updateweeklysales
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: viewstoreinfo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: viewstoreinfo
+  template:
+    metadata:
+      labels:
+        app: viewstoreinfo
+    spec:
+      containers:
+        - name: viewstoreinfo
+          image: armang1/coe692:viewstoreinfo
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              value: lmsstoredb:3306
+            - name: kubeMQAddress
+              value: 10.81.248.53:50000
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: viewstoreinfo
+spec:
+  selector:
+    app: viewstoreinfo
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: armang1/coe692:frontend
+          ports:
+            - containerPort: 8080
+          env:
+            - name: managestoremanagers
+              value: managestoremanagers:80
+            - name: searchinventory
+              value: searchinventory:80
+            - name: updateweeklysales
+              value: updateweeklysales:80
+            - name: viewstoreinfo
+              value: viewstoreinfo:80
+            - name: getsales
+              value: getsales:80
+            - name: updatesale
+              value: updatesale:80
+            - name: DB_URL3
+              value: lmsdb:3306
+            - name: DB_URL2
+              value: lmsdb:3306
+
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
