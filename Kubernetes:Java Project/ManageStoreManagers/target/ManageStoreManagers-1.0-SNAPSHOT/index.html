@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Add Manager</h2>
+    <form action="webresources/managers/add" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="postalCode">Postal Code:</label><br>
+        <input type="text" id="postalCode" name="postalCode" required><br><br>
+        
+        <label for="street">Street:</label><br>
+        <input type="text" id="street" name="street" required><br><br>
+        
+        <label for="phoneNo">Phone Number:</label><br>
+        <input type="text" id="phoneNo" name="phoneNo" required><br><br>
+        
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="submit">Add Manager</button>
+    </form>
+        <h1>Hello World</h1>
+        <form action="webresources/managers/here" method="get"> 
+            <input type="submit" value="FetchManagers">
+        </form> 
+        
+
+        
+    <h1>Delete</h1>
+<form action="webresources/managers/delete" method="POST" id="deleteForm">
+    <input type="hidden" name="_method" value="DELETE">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+    <button type="submit">Delete Manager</button>
+</form>
+    
+    <h2>Update Manager</h2>
+    <form action="webresources/managers/update" method="POST">
+        
+        <label for="managerID">Current ManagerID:</label><br>
+        <input type="text" id="managerID" name="managerID" required><br><br>
+        
+        <label for="updateUsername">Username:</label><br>
+        <input type="text" id="updateUsername" name="username" required><br><br>
+        
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+        
+        <label for="postalCode">Postal Code:</label><br>
+        <input type="text" id="postalCode" name="postalCode"><br><br>
+        
+        <label for="street">Street:</label><br>
+        <input type="text" id="street" name="street"><br><br>
+        
+        <label for="phoneNo">Phone Number:</label><br>
+        <input type="text" id="phoneNo" name="phoneNo"><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <button type="submit">Update Manager</button>
+    </form>
+    
+
+    </body>
+</html>
+
+
+
+
+
+

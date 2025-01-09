@@ -1,0 +1,6 @@
+ryerson/ca/viewstoreinfo/endpoint/ApplicationConfig.class
+ryerson/ca/viewstoreinfo/helper/StoreXML.class
+ryerson/ca/viewstoreinfo/persistence/Store_CRUD.class
+ryerson/ca/viewstoreinfo/helper/Store.class
+ryerson/ca/viewstoreinfo/endpoint/StoreResource.class
+ryerson/ca/viewstoreinfo/business/VIewStoreInfoBusiness.class

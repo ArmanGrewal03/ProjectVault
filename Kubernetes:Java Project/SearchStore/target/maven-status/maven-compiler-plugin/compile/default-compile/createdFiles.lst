@@ -1,0 +1,7 @@
+ryerson/ca/inventorysearch/Helper/Product.class
+ryerson/ca/inventorysearch/Helper/ProductXML.class
+ryerson/ca/inventorysearch/Business/SearchBusiness.class
+ryerson/ca/inventorysearch/Persistence/Inventory_CRUD.class
+ryerson/ca/inventorysearch/Endpoint/SearchResource.class
+ryerson/ca/inventorysearch/Endpoint/ApplicationConfig.class
+ryerson/ca/inventorysearch/Helper/Supplier.class

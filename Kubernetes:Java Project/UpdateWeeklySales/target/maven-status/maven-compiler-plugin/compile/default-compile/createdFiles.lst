@@ -1,0 +1,6 @@
+ryerson/ca/updatesales/endpoint/SalesResource.class
+ryerson/ca/updatesales/business/UpdateSalesBusiness.class
+ryerson/ca/updatesales/business/Messaging.class
+ryerson/ca/updatesales/helper/Sales.class
+ryerson/ca/updatesales/persistence/SALES_CRUD.class
+ryerson/ca/updatesales/endpoint/ApplicationConfig.class

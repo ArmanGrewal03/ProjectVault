@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Search</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Inventory Search</h1>
+    <form id="searchForm" action="webresources/search/" method="get">
+        <label for="query">Enter your search query:</label><br>
+        <input type="text" id="query" name="query"><br><br>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Display search results here -->
+    <div id="searchResults"></div>
+
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            var query = document.getElementById("query").value; // Get the search query from the input field
+            
+            // Send a GET request to the backend endpoint with the search query
+            fetch("webresources/search/" + query)
+                .then(response => response.text()) // Parse the response as text
+                .then(data => {
+                    // Display the response (XML) as text in the searchResults div
+                    document.getElementById("searchResults").innerText = data;
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

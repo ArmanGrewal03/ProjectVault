@@ -1,0 +1,6 @@
+ryerson/ca/managestoremanagers/helper/Manager.class
+ryerson/ca/managestoremanagers/endpoint/ApplicationConfig.class
+ryerson/ca/managestoremanagers/endpoint/ManageResource.class
+ryerson/ca/managestoremanagers/helper/ManagerXML.class
+ryerson/ca/managestoremanagers/persistence/Manager_CRUD.class
+ryerson/ca/managestoremanagers/business/ManageManagersBusiness.class
